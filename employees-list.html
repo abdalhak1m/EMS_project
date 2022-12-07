@@ -133,17 +133,17 @@
                             <td>johndoe@gmail.com</td>
                             <td>
                                 <div class="d-grid">
-                                    <a href="#" class="btn btn-sm btn-primary">Details</a>
+                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#employee_details">Details</a>
                                 </div>
                             </td>
                             <td>
                                 <div class="d-grid">
-                                    <a href="#" class="btn btn-sm btn-warning">Edit</a>
+                                    <a href="#" class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#employee_edit">Edit</a>
                                 </div>
                             </td>
                             <td>
                                 <div class="d-grid">
-                                    <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                                    <a href="#" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#employee_delete">Delete</a>
                                 </div>
                             </td>
                         </tr>
@@ -154,17 +154,17 @@
                             <td>johndoe@gmail.com</td>
                             <td>
                                 <div class="d-grid">
-                                    <a href="#" class="btn btn-sm btn-primary">Details</a>
+                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#employee_details">Details</a>
                                 </div>
                             </td>
                             <td>
                                 <div class="d-grid">
-                                    <a href="#" class="btn btn-sm btn-warning">Edit</a>
+                                    <a href="#" class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#employee_edit">Edit</a>
                                 </div>
                             </td>
                             <td>
                                 <div class="d-grid">
-                                    <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                                    <a href="#" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#employee_delete">Delete</a>
                                 </div>
                             </td>
                         </tr>
@@ -294,7 +294,7 @@
         </div>
     </div>
     <!-- Employee Details -->
-    
+
     <!-- Edit Modal -->
     <div class="modal fade" id="employee_edit" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" style="backdrop-filter: blur(5px);">
         <div class="modal-dialog modal-dialog-centered">
@@ -361,6 +361,23 @@
         </div>
     </div>
     <!-- Edit Modal -->
+
+    <!-- Delete Modal -->
+    <div class="modal fade" id="employee_delete" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" style="backdrop-filter: blur(5px);">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center d-flex justify-content-between align-items-center p-3">
+                    <h4 class="fw-light m-0">Do you want to delete <strong><q>John Doe</q></strong> ?</h4>
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="submit" class="btn btn-sm btn-danger">YES!</button>
+                    <button type="submit" class="btn btn-sm btn-warning" data-bs-dismiss="modal" aria-label="Close">Nope, Go back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Delete Modal -->
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
